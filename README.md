@@ -13,4 +13,6 @@ browse to http://localhost:8181/services/hello/?wsdl
 
 * Project startup:
 mvn archetype:generate -DgroupId=org.ravi.spring.cxf -DartifactId=cxf-app -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=true
-Cleaned up a whole lot of code there.
+Cleaned up a whole lot of code and dependencies.
+Deleted App and its test
+
