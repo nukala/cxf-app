@@ -16,3 +16,4 @@ mvn archetype:generate -DgroupId=org.ravi.spring.cxf -DartifactId=cxf-app -Darch
 Cleaned up a whole lot of code and dependencies.
 Deleted App and its test
 
+* Also note: we need WebService annotations around the interface and impls, else exceptions that talk about bindings occur
