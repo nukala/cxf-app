@@ -10,6 +10,8 @@ import javax.xml.ws.Endpoint;
 
 @Configuration
 public class ServiceConfiguration {
+    public static final String HELLO_SERVICE = "http://localhost:8181/services/hello";
+
     @Bean
     public SpringBus springBus() {
         return new SpringBus();
@@ -19,7 +21,7 @@ public class ServiceConfiguration {
     public Endpoint endpoint(SpringBus bus) {
         EndpointImpl endpoint = new EndpointImpl(bus, new HelloImpl());
         endpoint.setBus(bus);
-        endpoint.publish("http://localhost:8181/services/hello");
+        endpoint.publish(HELLO_SERVICE);
         return endpoint;
     }
 }
