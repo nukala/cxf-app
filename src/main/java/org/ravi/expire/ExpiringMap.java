@@ -14,5 +14,9 @@ public interface ExpiringMap<K, V> {
 
     V get(K key);
 
+    V remove(K key);
+
     void clear();
+
+    int size();
 }
