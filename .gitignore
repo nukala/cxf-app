@@ -26,3 +26,9 @@ target
 **/.DS_STORE
 
 bin
+
+**/*.gz
+**/*.zip
+**/*.tar
+**/*.tar.gz
+**/*.gz
